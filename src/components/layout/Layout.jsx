@@ -6,7 +6,7 @@ import { Outlet } from "react-router-dom";
 
 
 export const Layout = () => {
-    const [isDrawerOpen, setIsDrawerOpen] = useState(true);
+    const [isDrawerOpen, setIsDrawerOpen] = useState(false);
     const toggleDrawer = () => {
         setIsDrawerOpen(!isDrawerOpen);
     };

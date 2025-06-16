@@ -1,7 +1,7 @@
 import './App.css';
 import {BrowserRouter, Route, Routes} from "react-router-dom";
 import {Layout} from "./components/layout/Layout";
-import {paths} from "./constants";
+import {paths} from "./utils/constants";
 
 function App() {
   return <Routes>

@@ -2,7 +2,7 @@ import {Box, Drawer, ListItem, ListItemButton, ListItemIcon, ListItemText} from 
 import './drawer.css';
 import List from '@mui/material/List';
 import { Link } from 'react-router-dom';
-import {paths} from "../../constants";
+import {paths} from "../../utils/constants";
 
 export const CustomDrawer = ({isDrawerOpen, toggleDrawer}) => {
     return <Drawer
