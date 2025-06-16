@@ -1,16 +1,18 @@
 import './App.css';
-import {FileStoragePage} from "./pages/FileStoragePage";
 import {BrowserRouter, Route, Routes} from "react-router-dom";
+import {Layout} from "./components/layout/Layout";
+import {paths} from "./constants";
 
 function App() {
-  return (
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<FileStoragePage />}>
-          </Route>
+  return <Routes>
+            <Route element={<Layout />}>
+                {paths.map(path => <Route
+                    path={path.to}
+                    element={path.element}
+                />)}
+            </Route>
         </Routes>
-      </BrowserRouter>
-  );
+
 }
 
 export default App;

@@ -1,0 +1,37 @@
+@import '../../App.css';
+
+.navbar-drawer .MuiDrawer-paper {
+    width: 280px;
+    background-color: var(--primary-white) !important;
+    color: var(--primary-dark) !important;
+}
+
+.drawer-content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.drawer-close-button {
+    align-self: flex-end !important;
+    color: var(--text-primary) !important;
+    margin-bottom: var(--spacing-lg) !important;
+}
+
+.drawer-nav {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+}
+
+.drawer-link {
+    color: var(--primary-dark) !important;
+    text-decoration: none !important;
+    font-size: var(--font-size-lg);
+    padding: var(--spacing-sm) 0;
+    transition: color 0.3s ease;
+}
+
+.drawer-link:hover {
+    color: var(--primary-light) !important;
+}

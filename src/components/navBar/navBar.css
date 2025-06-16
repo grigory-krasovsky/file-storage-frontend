@@ -1,0 +1,35 @@
+@import '../../App.css';
+
+.navbar {
+    background-color: var(--primary-color) !important;
+    color: var(--text-primary) !important;
+}
+
+.navbar-toolbar {
+    padding: 0 var(--spacing-lg) !important;
+    min-height: 64px !important;
+}
+
+.navbar-title {
+    display: flex;
+    justify-content: center;
+    font-size: var(--font-size-xl) !important;
+    font-weight: 600 !important;
+    flex-grow: 1;
+}
+
+.navbar-menu-button {
+    color: var(--text-primary) !important;
+    margin-right: var(--spacing-md) !important;
+}
+
+@media (max-width: var(--breakpoint-sm)) {
+    .navbar-toolbar {
+        padding: 0 var(--spacing-md) !important;
+        min-height: 56px !important;
+    }
+
+    .navbar-title {
+        font-size: var(--font-size-lg) !important;
+    }
+}
