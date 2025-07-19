@@ -16,16 +16,16 @@ export const Contents = ({data}) => {
             <Table size={'small'}>
                 <TableHead>
                     <TableRow>
+                        <TableCell>Img</TableCell>
                         <TableCell>Name</TableCell>
                         <TableCell align="right">Size</TableCell>
-                        <TableCell align="right">Modified</TableCell>
                         <TableCell align="right">Actions</TableCell>
                     </TableRow>
                 </TableHead>
                 <TableBody>
                     {data && data.content.map((file) => {
-                        return <FileRow key={file.id} file={file}/>
-                    }
+                            return <FileRow key={file.fileLocationUUID} file={file}/>
+                        }
                     )}
                 </TableBody>
             </Table>

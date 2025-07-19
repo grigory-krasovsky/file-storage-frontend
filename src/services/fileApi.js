@@ -12,8 +12,16 @@ export const fileApi = createApi({
                 method: 'GET',
             }),
         }),
+        getFilePreview: builder.query({
+            query: ({parent}) => ({
+                url: `/file/access/preview/${parent}`,
+                method: 'GET',
+                responseHandler: (response) => response.blob().then(blob => URL.createObjectURL(blob)),
+            }),
+            keepUnusedDataFor: 30
+        }),
     }),
 });
 
 
-export const { useGetFileAccessQuery } = fileApi;
+export const { useGetFileAccessQuery, useGetFilePreviewQuery } = fileApi;
